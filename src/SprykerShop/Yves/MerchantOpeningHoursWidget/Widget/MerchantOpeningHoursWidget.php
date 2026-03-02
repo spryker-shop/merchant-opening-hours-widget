@@ -19,35 +19,21 @@ class MerchantOpeningHoursWidget extends AbstractWidget
      */
     protected const PARAMETER_MERCHANT_OPENING_HOURS = 'merchantOpeningHours';
 
-    /**
-     * @param int $idMerchant
-     */
     public function __construct(int $idMerchant)
     {
         $this->addMerchantOpeningHoursParameter($idMerchant);
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'MerchantOpeningHoursWidget';
     }
 
-    /**
-     * @return string
-     */
     public static function getTemplate(): string
     {
         return '@MerchantOpeningHoursWidget/views/merchant-opening-hours-widget/merchant-opening-hours-widget.twig';
     }
 
-    /**
-     * @param int $idMerchant
-     *
-     * @return void
-     */
     protected function addMerchantOpeningHoursParameter(int $idMerchant): void
     {
         $this->addParameter(

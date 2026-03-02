@@ -11,10 +11,5 @@ use Generated\Shared\Transfer\MerchantOpeningHoursStorageTransfer;
 
 interface MerchantOpeningHoursWidgetToMerchantOpeningHoursStorageClientInterface
 {
-    /**
-     * @param int $idMerchant
-     *
-     * @return \Generated\Shared\Transfer\MerchantOpeningHoursStorageTransfer|null
-     */
     public function findMerchantOpeningHoursByIdMerchant(int $idMerchant): ?MerchantOpeningHoursStorageTransfer;
 }

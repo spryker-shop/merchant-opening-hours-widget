@@ -24,11 +24,6 @@ class MerchantOpeningHoursWidgetToMerchantOpeningHoursStorageClientBridge implem
         $this->merchantOpeningHoursStorageClient = $merchantOpeningHoursStorageClient;
     }
 
-    /**
-     * @param int $idMerchant
-     *
-     * @return \Generated\Shared\Transfer\MerchantOpeningHoursStorageTransfer|null
-     */
     public function findMerchantOpeningHoursByIdMerchant(int $idMerchant): ?MerchantOpeningHoursStorageTransfer
     {
         return $this->merchantOpeningHoursStorageClient->findMerchantOpeningHoursByIdMerchant($idMerchant);

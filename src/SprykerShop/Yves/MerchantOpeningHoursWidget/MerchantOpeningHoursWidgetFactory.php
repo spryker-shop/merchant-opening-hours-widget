@@ -12,9 +12,6 @@ use SprykerShop\Yves\MerchantOpeningHoursWidget\Dependency\Client\MerchantOpenin
 
 class MerchantOpeningHoursWidgetFactory extends AbstractFactory
 {
-    /**
-     * @return \SprykerShop\Yves\MerchantOpeningHoursWidget\Dependency\Client\MerchantOpeningHoursWidgetToMerchantOpeningHoursStorageClientInterface
-     */
     public function getMerchantOpeningHoursStoregeClient(): MerchantOpeningHoursWidgetToMerchantOpeningHoursStorageClientInterface
     {
         return $this->getProvidedDependency(MerchantOpeningHoursWidgetDependencyProvider::CLIENT_MERCHANT_OPENING_HOURS_STORAGE);
